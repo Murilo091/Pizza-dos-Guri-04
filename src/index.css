@@ -50,8 +50,9 @@ menu-toggle{
     position: fixed;
     top: 0;
     right: 0;
-    width: 100vh;
-    background: black;
+    width: 20%;
+    height: 100vh;
+    background: #1c1c1c;
     display: flex;
     flex-direction: column;
     padding: 80px 40px;
@@ -82,7 +83,51 @@ menu-toggle{
     z-index: 700;
 }
 
-.overlay-menu.menu.active{
+.overlay-menu.active{
     opacity: 1;
     visibility: visible;
+}
+
+/* css do hero */
+
+.hero{
+    height: 100vh;
+    background: url(./assets/pizza-Fundo.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay{
+    background-color: #1c1c1c (0, 0, 0, 0.2);
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 80px;
+}
+
+.hero-txt h2{
+    font-size: 90px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 160px;
+}
+.hero-txt{
+    max-width: 800;
+    text-align: right;
+}
+
+.hero-txt button{
+    padding: 12px 28px;
+    border: none;
+    background-color: #155e3a;
+    color: aquamarine;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3;
+}
+
+.hero-txt button:hover{
+    background-color: #87331a;
 }

@@ -149,3 +149,35 @@ menu-toggle{
     justify-content: center;
     gap: 30px;
 }
+.card{
+    background-color: #00554d;
+    padding: 30px 20px;
+    margin: 0 20px;
+    border-radius: 15px;
+    width: 200px;
+    display: flx;
+
+    flex-direction: c
+    olumn;
+    align-items: cent
+    er;
+    justify-content: 
+    center;
+    transition: 0.3s;
+    box-shadow: 5px 8px #1c1c1c;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.card p{
+    font-size: 16px;
+    line-height: 1.3;
+}

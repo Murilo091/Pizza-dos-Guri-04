@@ -10,7 +10,7 @@ export default function Header(){
     return(
         <>
             <header className="header">
-                <h1 className="logo">Pizza Fiep</h1>
+                <h1 className="logo">Pizza dos piá</h1>
                 {/* Quando clicar, chama a função toggleMenu */}
                 <div className="menu-toggle" onClick={toggleMenu}>
                     <span></span>

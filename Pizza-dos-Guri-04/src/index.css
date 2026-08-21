@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapi.com/css2?family=Jacques+Francois&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'jack Francois', Arial;
+}
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: 500;
+}
+/* menu com icon mobile */
+menu-toggle{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1100;
+}
+.menu-toggle span{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+} 
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100vh;
+    background: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 40px;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+}
+
+.menu a{
+    margin: 15px 0;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 18px;
+}
+
+.menu.active{
+    transform: translateX(0);
+}
+.overlay-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black (0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 700;
+}
+
+.overlay-menu.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* css do hero */
+
+.hero{
+    height: 100vh;
+    background: url(./assets/pizza-Fundo.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay{
+    background-color: #1c1c1c (0, 0, 0, 0.2);
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 80px;
+}
+
+.hero-txt h2{
+    font-size: 90px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 160px;
+}
+.hero-txt{
+    max-width: 800;
+    text-align: right;
+}
+
+.hero-txt button{
+    padding: 12px 28px;
+    border: none;
+    background-color: #155e3a;
+    color: aquamarine;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3;
+}
+
+.hero-txt button:hover{
+    background-color: #87331a;
+}
+ 
+/* Diferenciais */
+
+.diferenciais{
+    background-color: #0f5132;
+    padding: 60px 20px;
+    text-align: center;
+}
+.diferenciais h2{
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.card{
+    background-color: #00554d;
+    padding: 30px 20px;
+    margin: 0 20px;
+    border-radius: 15px;
+    width: 200px;
+    display: flx;
+
+    flex-direction: c
+    olumn;
+    align-items: cent
+    er;
+    justify-content: 
+    center;
+    transition: 0.3s;
+    box-shadow: 5px 8px #1c1c1c;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.card p{
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.cardapio{
+    background-color: aliceblue;
+    color: #000;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cardapio h2{
+    font-size: 32px;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.lista{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.lista ul{
+    list-style: none;
+    margin: 0 50px;
+}
+
+.lista ul::before{
+    content: attr(data-title);
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lista li{
+    margin: 6px 50px;
+    font-size: 15px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.lista li::before{
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #000;
+}
+
+/* sobre */
+
+.sobre{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: #155e3a;
+}
+
+.sobre h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.texto-topo{
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0 auto 20px auto;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.image img{
+    width: 320px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.texto-lateral{
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.texto-lateral p{
+    margin-bottom: 14px;
+}
